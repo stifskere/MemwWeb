@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap');
+
+body {
+    background-color: #202020;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.centered {
+    padding: 30vh 0;
+}
+
+@media (orientation: portrait) {
+    .centered {
+        padding: 35vh 0;
+    }
+}
+
+.navBarButton {
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.memwText {
+    color: #FFFFFF;
+    font-size: 7rem;
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.memwDesc {
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.fixed {
+    position: fixed;
+    margin-left: 65vh;
+    margin-top: 0;
+    padding-bottom: 50vh;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+
+.description {
+    margin-top: 20vh;
+}
+
+.tg  {border-collapse:collapse;
+    border-color:#ccc;
+    border-spacing:0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tg td{
+:#fff;
+    border-color:#ccc;
+    border-style:solid;
+    border-width:1px;
+    color:#333;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg th{
+    background-color:#f0f0f0;
+    border-color:#ccc;
+    border-style:solid;
+    border-width:1px;
+    color:#333;
+    font-family:Arial, sans-serif;
+    font-size:14px;
+    font-weight:normal;
+    overflow:hidden;
+    padding:10px 5px;
+    word-break:normal;
+}
+
+.tg .tg-hfk9{
+    background-color:#202020;
+    border-color: #ffffff;
+    border-left: 0;
+    border-right: 0;
+    height: 1vh;
+    text-align:left;
+    vertical-align:top
+}
+
+.tg .tg-gbqi{
+    background-color:#656565;
+    border-color:#ffffff;
+    color:#ffffff;
+    text-align:left;
+    vertical-align:top
+}
+
+.tg .tg-ag0s{
+    background-color:#656565;
+    border-color:#ffffff;
+    color:#ffffff;
+    text-align:center;
+    vertical-align:top
+}
+
+.tg .tg-k8xc{
+    background-color:#343434;
+    border-color:#ffffff;
+    color:#ffffff;
+    text-align:left;
+    vertical-align:top
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+}
+
+.separator {
+    width: 100vw;
+    margin-top: 7rem;
+    padding: 10vh 0;
+    background-color: #303030;
+    color: white;
+    text-align: center;
+}
+
+@media (orientation: portrait) {
+    .separator{
+        margin-top: 19rem;
+    }
+}
+
+.zoomedImage {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(56,56,56,70%);
+}
+
+.zoomedImage2{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 70vh;
+
+}
+
+.lcommands {
+    text-align: center;
+    font-size: 2rem;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #303030;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #303030;
+}
+
+::-webkit-scrollbar-track {
+    background: #232323;
+}
+
+@media (max-height: 900px) and (orientation: landscape) {
+    .centered {
+        padding: 15vh 0;
+    }
+    .imgUnselected {
+        width: 50vw;
+        height: 50vh;
+    }
+
+}
+
+@media (orientation: portrait) {
+    .navBarButton {
+        font-size: 3em;
+    }
+    .imgUnselected {
+        width:40vh;
+        height: 20vh;
+    }
+    .zoomedImage2 {
+        width: 50vh;
+        height: 30vh;
+    }
+    .separator{
+        margin-top: 20rem;
+    }
+}
+
+.disabledLink {
+    pointer-events: none;
+    color: #8c8c8c;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
