@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memw</title>
+    <link rel="icon" href="img/MewaCorp.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="navBar unselectable">
+            <a href="index.html" class="navBarButton">Home</a>
+            <a href="https://discord.com/api/oauth2/authorize?client_id=961068229097304166&permissions=8&scope=bot%20applications.commands" class="navBarButton" style="float: right;">Invite</a>
+            <a href="https://discord.gg/4VEk9qAKfT" class="navBarButton" style="float: right;">Support server</a>
+        </div>
+
+        <div class="centered unselectable">
+            <p class="memwText" id="a">Memw bot</p>
+            <p class="memwDesc" id="b">Discord bot</p>
+        </div>
+    </div>
+
+    <div class="separator">
+    </div>
+
+    <div class="description">
+        <p class="memwDesc unselectable">
+            Memw is a Discord bot that is used to help manage the server.
+            <br>
+            With Memw you can get logs of the server, manage, punish members
+            and more.
+            <br>
+            <br>
+            Couple of images:
+            <br>
+            <br>
+
+            <div class="zoomedImage unselectable" id="zoomedImage"  hidden>
+                <img src="img/botScr4.jpg" alt="memw" class="unselectable zoomedImage2 imgSelected" style="border-radius: 15px">
+            </div>
+
+
+            <div class="unselectable" style="text-align: center;">
+                <img src="img/botScr4.jpg" alt="memw" class="unselectable imgUnselected" style="border-radius: 15px" id="clickZoom">
+            </div>
+
+
+        <br>
+        <br>
+           <p class="lcommands unselectable">Here is a list of commands:</p>
+        <br>
+
+        <!--TODO add the top  -->
+        <div class="unselectable">
+            <table class="tg">
+                <thead>
+                <tr>
+                    <th class="tg-gbqi">Bot commands</th>
+                    <th class="tg-gbqi">Description</th>
+                    <th class="tg-gbqi">Value</th>
+                    <th class="tg-gbqi">Value 2</th>
+                    <th class="tg-gbqi">Value 3</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="tg-k8xc">Ban</td>
+                    <td class="tg-k8xc">Bans a defined member</td>
+                    <td class="tg-k8xc">User</td>
+                    <td class="tg-k8xc">Reason - string</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Kick</td>
+                    <td class="tg-k8xc">Kicks a defined member</td>
+                    <td class="tg-k8xc">User</td>
+                    <td class="tg-k8xc">Reason - string</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Mute</td>
+                    <td class="tg-k8xc">Mutes a defined member</td>
+                    <td class="tg-k8xc">User</td>
+                    <td class="tg-k8xc">Reason - string</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Warn</td>
+                    <td class="tg-k8xc">Warns a defined member</td>
+                    <td class="tg-k8xc">User</td>
+                    <td class="tg-k8xc">Time format</td>
+                    <td class="tg-k8xc">Reason - string</td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Cases</td>
+                    <td class="tg-k8xc">Lets you see the user cases stored on punishments</td>
+                    <td class="tg-k8xc">User</td>
+                    <td class="tg-k8xc"></td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Remove punishment</td>
+                    <td class="tg-k8xc">Lets you remove a punishment from the cases list and un-punish the person</td>
+                    <td class="tg-k8xc">User</td>
+                    <td class="tg-k8xc">Case ID - int</td>
+                    <td class="tg-k8xc">Reason - string</td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Clear</td>
+                    <td class="tg-k8xc">Lets you delete up to 100 messages at the same time</td>
+                    <td class="tg-k8xc">Range - int</td>
+                    <td class="tg-k8xc">Exclude - channel ID - string</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Bot configuration</td>
+                    <td class="tg-k8xc">Lets you configure the bot</td>
+                    <td class="tg-k8xc">Name</td>
+                    <td class="tg-k8xc">Value</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-hfk9" colspan="5"></td>
+                </tr>
+                <tr>
+                    <td class="tg-ag0s">Configuration</td>
+                    <td class="tg-gbqi"></td>
+                    <td class="tg-gbqi">Name</td>
+                    <td class="tg-gbqi">Value</td>
+                    <td class="tg-gbqi">Value 2</td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Configuration</td>
+                    <td class="tg-k8xc">Tells the actual server configuration for the bot</td>
+                    <td class="tg-k8xc">Configuration</td>
+                    <td class="tg-k8xc"></td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Logs enabled</td>
+                    <td class="tg-k8xc">Tells if the Logs are enabled or disabled</td>
+                    <td class="tg-k8xc">Logs enabled</td>
+                    <td class="tg-k8xc">Value - Bool</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Logs channel</td>
+                    <td class="tg-k8xc">Tells where the logs should be sent</td>
+                    <td class="tg-k8xc">Logs channel</td>
+                    <td class="tg-k8xc">Channel ID - string</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Welcome enabled</td>
+                    <td class="tg-k8xc">Tells if the welcome message should be sent</td>
+                    <td class="tg-k8xc">Welcome enabled</td>
+                    <td class="tg-k8xc">Value - Bool</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Welcome message</td>
+                    <td class="tg-k8xc">Tells what should be the welcome message</td>
+                    <td class="tg-k8xc">Welcome message</td>
+                    <td class="tg-k8xc">Value - String</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Welcome image</td>
+                    <td class="tg-k8xc">Tells what the image should be on the welcome message</td>
+                    <td class="tg-k8xc">Welcome image</td>
+                    <td class="tg-k8xc">Link - String</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                <tr>
+                    <td class="tg-k8xc">Welcome channel</td>
+                    <td class="tg-k8xc">Tells what the channel where the welcome message should be sent</td>
+                    <td class="tg-k8xc">Welcome channel</td>
+                    <td class="tg-k8xc">Channel ID - string</td>
+                    <td class="tg-k8xc"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <br>
+            <br>
+            <p class="copyright unselectable">© memw - 2022</p>
+            <br>
+        </div>
+    </div>
+</body>
+</html>
