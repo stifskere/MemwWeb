@@ -6,6 +6,78 @@ body {
     overflow-x: hidden;
 }
 
+.spinner {
+    --size: 30px;
+    --first-block-clr: #ffffff;
+    --second-block-clr: #ffffff;
+    --clr: #111;
+    width: 100px;
+    height: 100px;
+    position: center;
+}
+
+
+
+.spinner::after,.spinner::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    width: var(--size);
+    height: var(--size);
+    top: 50%;
+    animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+    left: 50%;
+    background: var(--first-block-clr);
+}
+
+.spinner::after {
+    background: var(--second-block-clr);
+    top: calc(50% - var(--size));
+    left: calc(50% - var(--size));
+    animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+}
+
+@keyframes down {
+    0%, 100% {
+        transform: none;
+    }
+
+    25% {
+        transform: translateX(100%);
+    }
+
+    50% {
+        transform: translateX(100%) translateY(100%);
+    }
+
+    75% {
+        transform: translateY(100%);
+    }
+}
+
+@keyframes up {
+    0%, 100% {
+        transform: none;
+    }
+
+    25% {
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: translateX(-100%) translateY(-100%);
+    }
+
+    75% {
+        transform: translateY(-100%);
+    }
+}
+
+.visible-false {
+    padding-left: 999999vh;
+    position: absolute;
+}
+
 .centered {
     padding: 30vh 0;
 }
@@ -178,20 +250,26 @@ body {
 
 ::-webkit-scrollbar {
     background: transparent;
+    overflow: auto;
 }
 
 ::-webkit-scrollbar-thumb {
     background: #303030;
     border-radius: 10px;
+    overflow: auto;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background: #303030;
+    overflow: auto;
 }
 
 ::-webkit-scrollbar-track {
     background: #232323;
+    overflow: auto;
 }
+
+
 
 @media (max-height: 900px) and (orientation: landscape) {
     .centered {
@@ -224,6 +302,51 @@ body {
 .disabledLink {
     pointer-events: none;
     color: #8c8c8c;
+}
+
+.project-title-div {
+    text-align: center;
+}
+
+.projects-title {
+    font-size: 50px;
+}
+
+.projects {
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+.project {
+    background-color: #818181;
+    border-radius: 15px;
+    padding-bottom: 10px;
+    margin-bottom: 7vh;
+}
+
+.project-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 15px;
+    padding-top: 15px;
+    margin-bottom: -15px;
+}
+
+.project-description {
+    color: white;
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
+
+.project-view {
+    color: white;
+    font-size: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: 20px;
+    background-color: #232323;
+    border-radius: 10px;
 }
 
 * {
