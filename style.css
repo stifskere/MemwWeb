@@ -349,6 +349,27 @@ body {
     border-radius: 10px;
 }
 
+@media (orientation: portrait) {
+    .projects {
+        padding-left: 3vw;
+        padding-right: 3vw;
+    }
+    .project {
+        margin-bottom: 2vh;
+    }
+    .project-view {
+        font-size: 2.5rem;
+    }
+
+    .project-title {
+        font-size: 3rem;
+    }
+
+    .project-description {
+        font-size: 2rem;
+    }
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     color: white;
