@@ -321,7 +321,6 @@ body {
     background-color: #818181;
     border-radius: 15px;
     padding-bottom: 10px;
-    margin-bottom: 7vh;
 }
 
 .project-title {
@@ -347,6 +346,17 @@ body {
     margin-right: 20px;
     background-color: #232323;
     border-radius: 10px;
+}
+
+.pcpp-part-list {
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.bottomText {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: -10px;
 }
 
 @media (orientation: portrait) {
