@@ -2,8 +2,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const bottomText = document.getElementsByClassName('bottomText');
 
-    const isMobile = () => window.matchMedia('(max-width: 700px)').matches
-
     const pc1 = document.getElementById('pc1');
     const pcone = document.getElementById('pcone');
 
