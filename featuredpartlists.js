@@ -1,6 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
 
     const bottomText = document.getElementsByClassName('bottomText');
+    const bottomText1 = document.getElementById('bottomText1');
+    const bottomText2 = document.getElementById('bottomText2');
 
     const pc1 = document.getElementById('pc1');
     const pcone = document.getElementById('pcone');
@@ -17,10 +19,13 @@ window.addEventListener('DOMContentLoaded', () => {
     }else{
         pcone.addEventListener('click', () => {
             pc1.hidden = !pc1.hidden;
+            if (bottomText[0].innerHTML === "Click to show") bottomText[0].innerHTML = "Click to hide";
+            else bottomText[0].innerHTML = "Click to show";
         });
-
         pctwo.addEventListener('click', () => {
             pc2.hidden = !pc2.hidden;
+            if (bottomText[1].innerHTML === "Click to show") bottomText[1].innerHTML = "Click to hide";
+            else bottomText[1].innerHTML = "Click to show";
         });
     }
 })
