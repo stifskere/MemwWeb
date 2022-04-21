@@ -367,6 +367,10 @@ margin-bottom: 40vh;
     color: #8c8c8c;
 }
 
+.pcredir {
+    text-decoration: none;
+}
+
 @media (orientation: portrait) {
     .projects {
         padding-left: 3vw;
