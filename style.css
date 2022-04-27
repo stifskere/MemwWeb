@@ -107,6 +107,7 @@ body {
 
     .navBar {
         background-color: #232323;
+        z-index: -1;
     }
 }
 
