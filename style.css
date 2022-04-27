@@ -371,6 +371,11 @@ margin-bottom: 40vh;
     text-decoration: none;
 }
 
+.responsive-image {
+    width: 100%;
+    height: auto;
+}
+
 @media (orientation: portrait) {
     .projects {
         padding-left: 3vw;
