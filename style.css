@@ -107,7 +107,6 @@ body {
 
     .navBar {
         background-color: #202020;
-        z-index: -1;
     }
 }
 
@@ -388,6 +387,10 @@ margin-bottom: 40vh;
 }
 
 @media (orientation: portrait) {
+    .projects-title {
+        padding-top: 5vh;
+    }
+
     .projects {
         padding-left: 3vw;
         padding-right: 3vw;

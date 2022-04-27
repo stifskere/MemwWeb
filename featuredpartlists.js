@@ -15,7 +15,7 @@ window.addEventListener('DOMContentLoaded', () => {
         bottomText[0].innerHTML = '<p>View list on PCPartPicker</p>';
         bottomText[1].innerHTML = '<p>View list on PCPartPicker</p>';
         pcone.href = "https://pcpartpicker.com/list/yWgntn";
-        pctwo.href = "https://pcpartpicker.com/list/Cw9C6r";
+        pctwo.href = "https://pcpartpicker.com/list/B4NrDq";
     }else{
         pcone.addEventListener('click', () => {
             pc1.hidden = !pc1.hidden;
