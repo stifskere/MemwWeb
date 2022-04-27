@@ -94,16 +94,20 @@ body {
     text-align: center;
 }
 
-@media (orientation: portrait) {
-    .centered {
-        padding: 35vh 0;
-    }
-}
-
 .navBar {
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+@media (orientation: portrait) {
+    .centered {
+        padding: 35vh 0;
+    }
+
+    .navBar {
+        background-color: #232323;
+    }
 }
 
 .navBarButton {
