@@ -10,6 +10,4 @@ window.addEventListener('DOMContentLoaded', () => {
         zoomedImage.addEventListener('click', () => {
             zoomedImage.hidden = !zoomedImage.hidden;
         });
-
-
 });
