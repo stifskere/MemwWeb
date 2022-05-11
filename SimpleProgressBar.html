@@ -1,1 +1,100 @@
-<!DOCTYPE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Memw - Simple progress bar</title>
+    <link rel="icon" href="img/MewaCorp.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="loading.js"></script>
+</head>
+<body>
+<div class="spinner" id="loading"></div>
+<div class="main">
+    <div class="navBar unselectable">
+        <a href="index.html" class="navBarButton">Home</a>
+        <a href="projects.html" class="navBarButton">Stuff</a>
+        <a href="https://www.npmjs.com/package/@memw/simpleprogressbar" class="navBarButton" style="float: right;">View on NPM</a>
+    </div>
+
+    <div class="centered unselectable separator">
+        <p class="memwText" id="a">SimpleProgressBar</p>
+        <p class="memwDesc" id="b">NPM Package</p>
+    </div>
+</div>
+<div class="description">
+    <p class="memwDesc unselectable">
+        SimpleProgressBar is a simple node package that lets you create progress bars as strings.
+        <br>
+        <br>
+        Here is an example
+        <br>
+        <br>
+        <img src="img/SimpleProgressBar.svg">
+    </p>
+    <div class="docs">
+        <p class="lcommands unselectable">Simple progress bar</p><br><br>
+
+        This package lets you make a progress bar, update it and get the string of it.<br><br>
+
+        <p class="lcommands unselectable">Usage</p><br><br>
+
+        this package is a simple constructor<br><br>
+
+        you require the package and use it like this<br><br>
+
+        <div class="codeBlock">
+            <br>
+            const simpleProgressBar = require('@memw/simpleprogressbar');
+            <br>
+            <br>
+        </div><br><br>
+
+
+        to use it you need to create a new instance of the class.<br><br>
+
+        <div class="codeBlock">
+            <br>
+        const progressBar = new simpleProgressBar(style);
+            <br>
+            <br>
+        </div><br><br>
+
+        the argument style is the style of the progress bar it is a string, example: "=>" or "##"<br><br>
+
+        <p class="lcommands unselectable">Methods</p><br><br>
+
+        There are 3 methods you can use for this progress bar:<br><br>
+
+        addToProgress lets you sum to the value of the progress bar, it doesn't return anything<br><br>
+
+        <div class="codeBlock">
+            <br>
+        progressBar.addToProgress(number);
+            <br>
+            <br>
+        </div><br><br>
+
+        resetProgress lets you reset the value of the progress bar, it doesn't return anything<br><br>
+
+        <div class="codeBlock">
+            <br>
+        progressBar.resetProgress();
+            <br>
+            <br>
+        </div><br><br>
+
+        and the last one is getProgress, it returns the string of the progress bar<br><br>
+
+        <div class="codeBlock">
+            <br>
+        progressBar.getProgress();
+            <br>
+            <br>
+        </div><br><br>
+    </div>
+    <br>
+    <br>
+    <p class="copyright unselectable">© memw - 2022</p>
+    <br>
+</div>
+</body>

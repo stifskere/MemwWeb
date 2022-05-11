@@ -432,6 +432,18 @@ margin-bottom: 40vh;
     margin-right: 25vw;
 }
 
+.docs {
+    text-align: center;
+}
+
+@media (orientation: portrait) {
+    .codeBlock {
+        border-radius: 8px;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     color: white;
