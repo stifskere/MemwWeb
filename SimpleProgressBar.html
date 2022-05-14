@@ -11,9 +11,9 @@
 <div class="spinner" id="loading"></div>
 <div class="main">
     <div class="navBar unselectable">
-        <a href="index.html" class="navBarButton">Home</a>
-        <a href="projects.html" class="navBarButton">Stuff</a>
-        <a href="https://www.npmjs.com/package/@memw/simpleprogressbar" class="navBarButton" style="float: right;">View on NPM</a>
+        <a href="index.html" class="navBarButton hoverButtons">Home</a>
+        <a href="projects.html" class="navBarButton hoverButtons">Stuff</a>
+        <a href="https://www.npmjs.com/package/@memw/simpleprogressbar" class="navBarButton hoverButtons" style="float: right;">View on NPM</a>
     </div>
 
     <div class="centered unselectable separator">
@@ -29,65 +29,83 @@
         Here is an example
         <br>
         <br>
-        <img src="img/SimpleProgressBar.svg">
+        <img class="unselectable" src="img/SimpleProgressBar.svg">
     </p>
     <div class="docs">
-        <p class="lcommands unselectable">Simple progress bar</p><br><br>
+        <p class="lcommands unselectable">Simple progress bar</p>
 
-        This package lets you make a progress bar, update it and get the string of it.<br><br>
+        <p class="unselectable">This package lets you make a progress bar, update it and get the string of it.<br><br></p>
 
-        <p class="lcommands unselectable">Usage</p><br><br>
+        <p class="lcommands unselectable">Usage</p>
 
-        this package is a simple constructor<br><br>
+        <p class="unselectable">this package is a simple constructor<br><br>
 
-        you require the package and use it like this<br><br>
-
-        <div class="codeBlock">
-            <br>
-            const simpleProgressBar = require('@memw/simpleprogressbar');
-            <br>
-            <br>
-        </div><br><br>
-
-
-        to use it you need to create a new instance of the class.<br><br>
+            you require the package and use it like this<br></p>
 
         <div class="codeBlock">
             <br>
-        const progressBar = new simpleProgressBar(style);
+            <span style="color: #ff728b">const</span> <span style="color: #5cc3ff">simpleProgressBar</span> <span style="color: orange">=</span> <span style="color: #5cc3ff">require</span>(<span style="color: orange">'@memw/simpleprogressbar'</span>);
             <br>
             <br>
-        </div><br><br>
+        </div><br>
 
-        the argument style is the style of the progress bar it is a string, example: "=>" or "##"<br><br>
 
-        <p class="lcommands unselectable">Methods</p><br><br>
-
-        There are 3 methods you can use for this progress bar:<br><br>
-
-        addToProgress lets you sum to the value of the progress bar, it doesn't return anything<br><br>
+        <p class="unselectable">to use it you need to create a new instance of the class.<br></p>
 
         <div class="codeBlock">
             <br>
-        progressBar.addToProgress(number);
+            <span style="color: #ff728b">const</span> <span style="color: #5cc3ff">progressBar</span> <span style="color: orange">=</span> <span style="color: #ff728b">new</span> <span style="color: #4eb58e">simpleProgressBar</span>(<span style="color: orange">style</span>);
             <br>
             <br>
-        </div><br><br>
+        </div><br>
 
-        resetProgress lets you reset the value of the progress bar, it doesn't return anything<br><br>
+        <p class="unselectable">the argument style is the style of the progress bar it is a string, example: "=>" or "##"<br></p>
 
-        <div class="codeBlock">
-            <br>
-        progressBar.resetProgress();
-            <br>
-            <br>
-        </div><br><br>
+        <p class="lcommands unselectable">Methods</p>
 
-        and the last one is getProgress, it returns the string of the progress bar<br><br>
+        <p class="unselectable">There are 3 methods you can use for this progress bar:<br><br>
+
+            addProgress lets you sum to the value of the progress bar, it doesn't return anything<br></p>
 
         <div class="codeBlock">
             <br>
-        progressBar.getProgress();
+            <span style="color: #5cc3ff">progressBar</span>.<span style="color: #4eb58e">addProgress</span>(<span style="color: #b44fff">value</span>);
+            <br>
+            <br>
+        </div><br>
+
+        <p class="unselectable">removeProgress lets you remove from the value of the progress bar, it doesn't return anything</p>
+
+        <div class="codeBlock">
+            <br>
+            <span style="color: #5cc3ff">progressBar</span>.<span style="color: #4eb58e">removeProgress</span>(<span style="color: #b44fff">value</span>);
+            <br>
+            <br>
+        </div><br>
+
+        <p class="unselectable">resetProgress lets you reset the value of the progress bar, it doesn't return anything</p>
+
+        <div class="codeBlock">
+            <br>
+            <span style="color: #5cc3ff">progressBar</span>.<span style="color: #4eb58e">resetProgress</span>();
+            <br>
+            <br>
+        </div><br>
+
+        <p class="unselectable">getProgress, it returns an integer with the progress of the bar</p>
+
+        <div class="codeBlock">
+            <br>
+            <span style="color: #5cc3ff">progressBar</span>.<span style="color: #4eb58e">getProgress</span>();
+            <br>
+            <br>
+        </div><br>
+
+        <p class="unselectable">getProgressBar, it returns a string with the progress bar</p>
+
+        <div class="codeBlock">
+            <br>
+            <span style="color: #5cc3ff">progressBar</span>.<span style="color: #4eb58e">getProgressBar</span>();
             <br>
             <br>
         </div><br><br>
