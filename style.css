@@ -172,15 +172,6 @@ br {
     -webkit-user-drag: none;
 }
 
-.selectable {
-    -webkit-user-select: auto;
-    -moz-user-select: auto;
-    -ms-user-select: auto;
-    user-select: auto;
-    -webkit-user-drag: auto;
-}
-
-
 .description {
     margin-top: 20vh;
 }
