@@ -23,21 +23,16 @@
 </div>
 <div class="description">
     <p class="memwDesc unselectable">
-        Better console adds some useful info in the console.
+        This package adds useful info to the console replacing the habitual methods.
         <br>
         <br>
-        <img class="unselectable" src="./img/betterConsoleExample.svg">
     </p>
+    <img class="unselectable" src="./img/betterConsoleExample.svg" style="height: 50vw; width: 60vw; border-radius: 5%; margin-left: 20vw" alt="example">
     <div class="docs">
-        <p class="lcommands unselectable">Better console</p>
-
-        <p class="unselectable">This package adds useful info to the console replacing the habitual methods.<br><br></p>
 
         <p class="lcommands unselectable">Usage</p>
 
-        <p class="unselectable">This package replaces the console methods<br><br>
-
-            you require the package and use it like this<br></p>
+        <p class="unselectable">This package replaces the console methods, you require the package and use it like this<br></p>
 
         <div class="codeBlock">
             <br>
@@ -46,63 +41,57 @@
             <br>
         </div><br>
 
-
-        <p class="unselectable">to use it you need to create a new instance of the class.<br></p>
-
-        <div class="codeBlock">
-            <br>
-            <span style="color: #ff728b">const</span> <span style="color: #5cc3ff">progressBar</span> <span style="color: orange">=</span> <span style="color: #ff728b">new</span> <span style="color: #4eb58e">simpleProgressBar</span>(<span style="color: orange">style</span>);
-            <br>
-            <br>
-        </div><br>
-
-        <p class="unselectable">the argument style is the style of the progress bar it is a string, example: "=>" or "##"<br></p>
-
         <p class="lcommands unselectable">Methods</p>
 
-        <p class="unselectable">There are 3 methods you can use for this progress bar:<br><br>
-
-            addProgress lets you sum to the value of the progress bar, it doesn't return anything<br></p>
+        <p class="unselectable">The methods are the console ones:<br><br></p>
 
         <div class="codeBlock">
             <br>
-            <span style="color: #5cc3ff">progressBar</span>.<span style="color: #4eb58e">addProgress</span>(<span style="color: #b44fff">value</span>);
+            <span style="color: #5cc3ff">console</span>.<span style="color: #4eb58e">log</span>(<span style="color: #b44fff">value</span>);
             <br>
             <br>
         </div><br>
 
-        <p class="unselectable">removeProgress lets you remove from the value of the progress bar, it doesn't return anything</p>
-
         <div class="codeBlock">
             <br>
-            <span style="color: #5cc3ff">progressBar</span>.<span style="color: #4eb58e">removeProgress</span>(<span style="color: #b44fff">value</span>);
+            <span style="color: #5cc3ff">console</span>.<span style="color: #4eb58e">trace</span>(<span style="color: #b44fff">value</span>);
             <br>
             <br>
         </div><br>
 
-        <p class="unselectable">resetProgress lets you reset the value of the progress bar, it doesn't return anything</p>
-
         <div class="codeBlock">
             <br>
-            <span style="color: #5cc3ff">progressBar</span>.<span style="color: #4eb58e">resetProgress</span>();
+            <span style="color: #5cc3ff">console</span>.<span style="color: #4eb58e">debug</span>(<span style="color: #b44fff">value</span>);
             <br>
             <br>
         </div><br>
 
-        <p class="unselectable">getProgress, it returns an integer with the progress of the bar</p>
-
         <div class="codeBlock">
             <br>
-            <span style="color: #5cc3ff">progressBar</span>.<span style="color: #4eb58e">getProgress</span>();
+            <span style="color: #5cc3ff">console</span>.<span style="color: #4eb58e">info</span>(<span style="color: #b44fff">value</span>);
             <br>
             <br>
         </div><br>
 
-        <p class="unselectable">getProgressBar, it returns a string with the progress bar</p>
+        <div class="codeBlock">
+            <br>
+            <span style="color: #5cc3ff">console</span>.<span style="color: #4eb58e">error</span>(<span style="color: #b44fff">value</span>);
+            <br>
+            <br>
+        </div><br>
 
         <div class="codeBlock">
             <br>
-            <span style="color: #5cc3ff">progressBar</span>.<span style="color: #4eb58e">getProgressBar</span>();
+            <span style="color: #5cc3ff">console</span>.<span style="color: #4eb58e">warn</span>(<span style="color: #b44fff">value</span>);
+            <br>
+            <br>
+        </div><br>
+
+        <p class="unselectable">if you don't want to add the info in a specific log there is an alternative method</p>
+
+        <div class="codeBlock">
+            <br>
+            <span style="color: #5cc3ff">console</span>.<span style="color: #4eb58e">normalLog</span>(<span style="color: #b44fff">value</span>);
             <br>
             <br>
         </div><br><br>
